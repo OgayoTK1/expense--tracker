@@ -1,0 +1,44 @@
+[
+    {
+        "amount": 20000.0,
+        "category": "food",
+        "description": "food expense",
+        "date": "2025-02-17 12:36:32"
+    },
+    {
+        "amount": 10000.0,
+        "category": "Dining out",
+        "description": "Eating at a restaurant",
+        "date": "2025-02-17 12:39:12"
+    },
+    {
+        "amount": 10000.0,
+        "category": "Transportation",
+        "description": "fares",
+        "date": "2025-02-17 12:40:10"
+    },
+    {
+        "amount": 15000.0,
+        "category": "clothing",
+        "description": "dressing elegant",
+        "date": "2025-02-17 12:41:11"
+    },
+    {
+        "amount": 5000.0,
+        "category": "Personal care",
+        "description": "caring always",
+        "date": "2025-02-17 12:53:52"
+    },
+    {
+        "amount": 5000.0,
+        "category": "mobile phone bills",
+        "description": "phone bills",
+        "date": "2025-02-17 12:54:50"
+    },
+    {
+        "amount": 10000.0,
+        "category": "Entertainment",
+        "description": "enjoyments",
+        "date": "2025-02-17 12:55:22"
+    }
+]
