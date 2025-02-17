@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Edit Expense</h2>
+<form method="POST">
+    <label for="amount">Amount:</label>
+    <input type="number" id="amount" name="amount" value="{{ expense.amount }}" step="0.01" required>
+    <label for="category">Category:</label>
+    <select id="category" name="category" required>
+        <option value="Food" {% if expense.category == 'Food' %}selected{% endif %}>Food</option>
+        <option value="Transport" {% if expense.category == 'Transport' %}selected{% endif %}>Transport</option>
+        <option value="Entertainment" {% if expense.category == 'Entertainment' %}selected{% endif %}>Entertainment</option>
+        <option value="Clothing" {% if expense.category == 'Clothing' %}selected{% endif %}>Clothing</option>
+        <option value="Phone Bills" {% if expense.category == 'Phone Bills' %}selected{% endif %}>Phone Bills</option>
+        <option value="Internet Bills" {% if expense.category == 'Internet Bills' %}selected{% endif %}>Internet Bills</option>
+        <option value="Miscellaneous" {% if expense.category == 'Miscellaneous' %}selected{% endif %}>Miscellaneous</option>
+    </select>
+    <label for="description">Description:</label>
+    <input type="text" id="description" name="description" value="{{ expense.description }}">
+    <label for="date">Date:</label>
+    <input type="date" id="date" name="date" value="{{ expense.date }}" required>
+    <button type="submit">Update Expense</button>
+</form>
+{% endblock %}
